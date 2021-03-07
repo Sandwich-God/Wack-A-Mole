@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Whack-A-Mole</title>
+	<link rel="icon" href="images/dehakaLogo.png" type="image/png" sizes="16x16">
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<style>
+		div 
+		{
+			width: 1200px;
+			height: 200px;
+		}
+		div.borderhead {
+			border: solid blue 1px;
+		}
+		div.gamebody {
+			border: solid blue 1px;
+		}
+	</style>
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row; text-center; borderhead">
+		<div class="col-sm-4"><button onclick="timer(); RandVal()" class='btn btn-primary btn-lg' id='button'>Start!</button></div>
+		<div class="col-sm-4"><h1>Total Score:<span id='TS'></span></h1></div>
+		<div class="col-sm-4"><h1>Time Left:<span id='TL'></span></h1></div>
+	</div>
+
+	<div class="row; text-center">
+		<div class="col-sm-4" onclick="clickevent('1')"><img src='images/hole.png' id="1"></div>
+		<div class="col-sm-4" onclick="clickevent('2')"><img src='images/hole.png' id="2"></div>
+		<div class="col-sm-4" onclick="clickevent('3')"><img src='images/hole.png' id="3"></div>
+	</div>
+	<div class="row; text-center">
+		<div class="col-sm-4" onclick="clickevent('4')"><img src='images/hole.png' id="4"></div>
+		<div class="col-sm-4" onclick="clickevent('5')"><img src='images/hole.png' id="5"></div>
+		<div class="col-sm-4" onclick="clickevent('6')"><img src='images/hole.png' id="6"></div>
+	</div>
+	<div class="row; text-center">
+		<div class="col-sm-12"><h1 id='finalscore'>Good Luck!</h1></div>
+	</div>
+</div>
+</body>
+</html>
