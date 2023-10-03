@@ -27,7 +27,7 @@ function RandVal()
 	startEnd = true; // When the button is clicked, the startEnd value will change to true, causing clickevent() to be activated.
 	rand = Math.floor(Math.random() * (MAX - MIN) + MIN); //Defines the rand value by a random integer using math.random.
 	document.getElementById("TS").innerHTML= score; //Changes the text of 'TS' and replaces it with the score variable.
-	document.getElementById(rand).src= 'images/dehaka.png'; //Changes the src to an image of the 'mole' on a randomly selected id.
+	document.getElementById(rand).src= 'images/Dehaka.png'; //Changes the src to an image of the 'mole' on a randomly selected id.
 	document.getElementById("button").disabled = true; //Will disable the button from being activated again.
 }
 
